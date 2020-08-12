@@ -3,6 +3,13 @@
 Baixar o Docker Desktop para sua plataforma (Windows, Linux ou Mac) atraves do link abaixo:
 [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
+clone este repo:
+
+```console
+git clone https://github.com/jonaopower/intro.docker.git
+cd intro.docker
+```
+
 ## Exemplo 1 - Criando um container via linha de comando
 
 Baixar imagem NGINX do registry Docker Hub
@@ -49,12 +56,6 @@ docker container stop <container_id>
 ```
 
 ## Exemplo 2 - Build de uma imagem com codigo
-
-Entrar no diretorio do repo clonado:
-
-```console
-cd intro.docker
-```
 
 Criar o arquivo "Dockerfile" (sem extensao e com D maiusculo) e adicionar o seguinte conteudo:
 
