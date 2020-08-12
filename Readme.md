@@ -1,9 +1,9 @@
 # Docker - mao na massa
 
-Baixar o Docker Desktop para sua plataforma (Windows, Linux ou Mac) atraves do link abaixo:
+Para seguir com esses exercicios, primeiramente baixe o Docker Desktop para sua plataforma (Windows, Linux ou Mac) atraves do link abaixo:
 [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-clone este repo:
+Depois, clone este repo e bora iniciar:
 
 ```console
 git clone https://github.com/jonaopower/intro.docker.git
