@@ -1,4 +1,4 @@
-# Dev Starter Pack - Hands-on Docker
+# Docker - mao na massa
 
 Baixar o Docker Desktop para sua plataforma (Windows, Linux ou Mac) atraves do link abaixo:
 [Docker Desktop](https://www.docker.com/products/docker-desktop)
