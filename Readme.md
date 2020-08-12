@@ -1,7 +1,9 @@
 # Docker - mao na massa
 
 Para seguir com esses exercicios, primeiramente baixe o Docker Desktop para sua plataforma (Windows, Linux ou Mac) atraves do link abaixo:
-[Docker Desktop](https://www.docker.com/products/docker-desktop)
+[Docker Desktop.](https://www.docker.com/products/docker-desktop)
+
+Vamos tambemm falar rapidamente sobre o registry padrao do Docker, o [Docker Hub.](https://hub.docker.com)
 
 Depois, clone este repo e bora iniciar:
 
