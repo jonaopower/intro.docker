@@ -160,5 +160,5 @@ docker tag id_imagem hubusername/nome_imagem:tag
 - Enviar imagem para docker HUB
 
 ```console
-docker push hubusername/nome_imagem
+docker push hubusername/nome_imagem:tag
 ```
