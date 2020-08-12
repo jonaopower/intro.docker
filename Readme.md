@@ -11,16 +11,23 @@ Baixar imagem NGINX do registry Docker Hub
 docker pull nginx:latest
 ```
 
-Baixar imagem APACHE do registry Docker Hub
+Baixar imagem APACHE 2.4.33 alpine do registry Docker Hub
 
 ```console
-docker pull httpd:latest
+docker pull httpd:2.4.33-alpine
 ```
 
 Listar as imagens disponiveis localmente
 
 ```console
 docker image ls
+```
+
+Verificar as camadas da imagem recem criada:
+
+```console
+docker history nome_da_imagem:tag
+docker history id_imagem
 ```
 
 Criar e executar um container a partir da imagem baixada (nginx)
@@ -43,19 +50,13 @@ docker container stop <container_id>
 
 ## Exemplo 2 - Build de uma imagem com codigo
 
-Clonar repo de com aplicacao de exemplo (Azure Devops):
+Entrar no diretorio do repo clonado:
 
 ```console
-git clone https://localiza.visualstudio.com/DefaultCollection/StarterPack/_git/intro.docker
+cd intro.docker
 ```
 
-Clonar repo de com aplicacao de exemplo (GitHub):
-
-```console
-git clone https://github.com/jonaopower/intro.docker.git
-```
-
-Criar o arquivo Dockerfile (sem extensao e com D maiusculo) e adicionar o seguinte conteudo:
+Criar o arquivo "Dockerfile" (sem extensao e com D maiusculo) e adicionar o seguinte conteudo:
 
 ```Dockerfile
 FROM nginx:latest
@@ -66,14 +67,7 @@ COPY app/ .
 Fazer build da imagem:
 
 ```console
-cd intro.docker
 docker build -t nome_da_imagem:tag .
-```
-
-Verificar as camadas da imagem recem criada:
-
-```console
-docker history nome_da_imagem:tag
 ```
 
 Criar e rodar um container a partir da imagem recem criada
